@@ -15,8 +15,17 @@ class Deque:
         self.items = items
         self.data = dllist()
 
+    def size(self):
+        return self.items
+
     def enqueue_left(self, item):
+        self.items += 1
         return self.data.appendleft(item)
         
     def enqueue_right(self, item):
+        self.items += 1
         return self.data.append(item)
+    
+    def dequeue_left(self):
+        self.items -= 1
+        return self.data.popleft()
