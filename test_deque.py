@@ -305,44 +305,44 @@ class TestDeque(unittest.TestCase):
         self.assertFalse(d.is_empty())
 
     def test_empty_after_dequeue_left(self):
-    #     """
-    #     Test 27: A deque with one enqueued value is empty after left-dequeuing.
-    #     """
-    #     d = Deque()
-    #     d.enqueue_left('fee')
-    #     _ = d.dequeue_left()
-    #     self.assertTrue(d.is_empty())
+        """
+        Test 27: A deque with one enqueued value is empty after left-dequeuing.
+        """
+        d = Deque()
+        d.enqueue_left('fee')
+        _ = d.dequeue_left()
+        self.assertTrue(d.is_empty())
 
-    # def test_empty_after_dequeue_right(self):
-    #     """
-    #     Test 28: A deque with one enqueued value is empty after right-dequeuing.
-    #     """
-    #     d = Deque()
-    #     d.enqueue_left('fee')
-    #     _ = d.dequeue_right()
-    #     self.assertTrue(d.is_empty())
+    def test_empty_after_dequeue_right(self):
+        """
+        Test 28: A deque with one enqueued value is empty after right-dequeuing.
+        """
+        d = Deque()
+        d.enqueue_left('fee')
+        _ = d.dequeue_right()
+        self.assertTrue(d.is_empty())
 
-    # def test_not_empty_multiple_left(self):
-    #     """
-    #     Test 29: A deque with two enqueued values is not empty after dequeuing only one
-    #     from the left.
-    #     """
-    #     d = Deque()
-    #     d.enqueue_left('fee')
-    #     d.enqueue_left('fi')
-    #     _ = d.dequeue_left()
-    #     self.assertFalse(d.is_empty())
+    def test_not_empty_multiple_left(self):
+        """
+        Test 29: A deque with two enqueued values is not empty after dequeuing only one
+        from the left.
+        """
+        d = Deque()
+        d.enqueue_left('fee')
+        d.enqueue_left('fi')
+        _ = d.dequeue_left()
+        self.assertFalse(d.is_empty())
 
-    # def test_not_empty_multiple_right(self):
-    #     """
-    #     Test 30: A deque with two enqueued values is not empty after dequeuing only one
-    #     from the right.
-    #     """
-    #     d = Deque()
-    #     d.enqueue_left('fee')
-    #     d.enqueue_left('fi')
-    #     _ = d.dequeue_right()
-    #     self.assertFalse(d.is_empty())
+    def test_not_empty_multiple_right(self):
+        """
+        Test 30: A deque with two enqueued values is not empty after dequeuing only one
+        from the right.
+        """
+        d = Deque()
+        d.enqueue_left('fee')
+        d.enqueue_left('fi')
+        _ = d.dequeue_right()
+        self.assertFalse(d.is_empty())
 
     #  # """
     # # Size
