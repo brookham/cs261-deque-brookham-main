@@ -26,27 +26,27 @@ class TestDeque(unittest.TestCase):
         except NameError:
             self.fail("Could not instantiate Deque.")
 
-    # def test_initial_size(self):
-    #     """
-    #     Test 2: A deque size is initially zero
-    #     """
-    #     q = Deque()
-    #     self.assertEqual(0,q.items)
+    def test_initial_size(self):
+        """
+        Test 2: A deque size is initially zero
+        """
+        q = Deque()
+        self.assertEqual(0,q.items)
 
-    # """
-    # Guiding enqueuing and dequeuing with internal storage
-    # """
+    """
+    Guiding enqueuing and dequeuing with internal storage
+    """
 
-    # def test_has_doubly_linked_list_internal(self):
-    #     """
-    #     Test 3: A deque has a data member, which is a dllist.
-    #     """
-    #     from llist import dllist # Hint: pip3 install llist
-    #     d = Deque()
-    #     self.assertEqual(dllist, type(d.data))
+    def test_has_doubly_linked_list_internal(self):
+        """
+        Test 3: A deque has a data member, which is a dllist.
+        """
+        from llist import dllist # Hint: pip3 install llist
+        d = Deque()
+        self.assertEqual(dllist, type(d.data))
 
-    # # Hint: Once test_has_doubly_linked_list_internal passes, uncomment the import at
-    # #       the top of this file.
+    # Hint: Once test_has_doubly_linked_list_internal passes, uncomment the import at
+    #       the top of this file.
 
     # def test_enqueue_left_one_internal(self):
     #     """

@@ -10,5 +10,7 @@
 
 from llist import dllist
 
-class FixMe:
-    pass
+class Deque:
+    def __init__(self, items = 0):
+        self.items = items
+        
