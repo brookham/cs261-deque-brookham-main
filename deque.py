@@ -29,3 +29,7 @@ class Deque:
     def dequeue_left(self):
         self.items -= 1
         return self.data.popleft()
+    
+    def dequeue_right(self):
+        self.items -= 1
+        return self.data.pop()
