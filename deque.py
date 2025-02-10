@@ -13,4 +13,5 @@ from llist import dllist
 class Deque:
     def __init__(self, items = 0):
         self.items = items
+        self.data = dllist()
         
