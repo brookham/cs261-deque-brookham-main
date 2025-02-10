@@ -344,22 +344,22 @@ class TestDeque(unittest.TestCase):
         _ = d.dequeue_right()
         self.assertFalse(d.is_empty())
 
-    #  # """
-    # # Size
-    # # """
+     # """
+    # Size
+    # """
 
 
-    # def test_dequeue_right_from_an_empty_deque(self):  
-    #     """
-    #     Test 31: Dequeueing from an empty deque raises ValueError. The size of the queue 
-    #     remains 0
-    #     """
-    #     q = Deque()
-    #     try:
-    #         q.dequeue_right()
-    #         self.fail("Did not raise an Exception")
-    #     except ValueError:
-    #         self.assertEqual(0, q.size())
+    def test_dequeue_right_from_an_empty_deque(self):  
+        """
+        Test 31: Dequeueing from an empty deque raises ValueError. The size of the queue 
+        remains 0
+        """
+        q = Deque()
+        try:
+            q.dequeue_right()
+            self.fail("Did not raise an Exception")
+        except ValueError:
+            self.assertEqual(0, q.size())
 
     # def test_dequeue_left_from_an_empty_deque(self):  
     #     """

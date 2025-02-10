@@ -37,5 +37,8 @@ class Deque:
         return self.data.popleft()
     
     def dequeue_right(self):
-        self.items -= 1
-        return self.data.pop()
+        if self.size() == 0:
+            raise ValueError("Deque empty")
+        else:
+            self.items -= 1
+            return self.data.pop()
