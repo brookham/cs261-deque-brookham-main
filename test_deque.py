@@ -361,17 +361,17 @@ class TestDeque(unittest.TestCase):
         except ValueError:
             self.assertEqual(0, q.size())
 
-    # def test_dequeue_left_from_an_empty_deque(self):  
-    #     """
-    #     Test 32: Dequeueing from an empty deque raises ValueError. The size of the queue 
-    #     remains 0
-    #     """
-    #     q = Deque()
-    #     try:
-    #         q.dequeue_left()
-    #         self.fail("Did not raise an Exception")
-    #     except ValueError:
-    #         self.assertEqual(0, q.size())
+    def test_dequeue_left_from_an_empty_deque(self):  
+        """
+        Test 32: Dequeueing from an empty deque raises ValueError. The size of the queue 
+        remains 0
+        """
+        q = Deque()
+        try:
+            q.dequeue_left()
+            self.fail("Did not raise an Exception")
+        except ValueError:
+            self.assertEqual(0, q.size())
 
     # def test_size_after_enqueue_right(self):
     #     """
