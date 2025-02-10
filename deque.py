@@ -14,4 +14,7 @@ class Deque:
     def __init__(self, items = 0):
         self.items = items
         self.data = dllist()
+
+    def enqueue_left(self, item):
+        return self.data.appendleft(item)
         
