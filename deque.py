@@ -17,6 +17,12 @@ class Deque:
 
     def size(self):
         return self.items
+    
+    def is_empty(self):
+        if self.size() == 0:
+            return True
+        else:
+            return False
 
     def enqueue_left(self, item):
         self.items += 1

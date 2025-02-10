@@ -277,34 +277,34 @@ class TestDeque(unittest.TestCase):
         self.assertEqual('fo', d.dequeue_left())
 
 
-    # """
-    # Emptiness
-    # """
+    """
+    Emptiness
+    """
 
-    # def test_empty(self):
-    #     """
-    #     Test 24: A deque is initially empty.
-    #     """
-    #     d = Deque()
-    #     self.assertTrue(d.is_empty())
+    def test_empty(self):
+        """
+        Test 24: A deque is initially empty.
+        """
+        d = Deque()
+        self.assertTrue(d.is_empty())
 
-    # def test_not_empty_left(self):
-    #     """
-    #     Test 25: A deque with one left-enqueued value is not empty.
-    #     """
-    #     d = Deque()
-    #     d.enqueue_left('fee')
-    #     self.assertFalse(d.is_empty())
+    def test_not_empty_left(self):
+        """
+        Test 25: A deque with one left-enqueued value is not empty.
+        """
+        d = Deque()
+        d.enqueue_left('fee')
+        self.assertFalse(d.is_empty())
 
-    # def test_not_empty_right(self):
-    #     """
-    #     Test 26: A deque with one right-enqueued value is not empty.
-    #     """
-    #     d = Deque()
-    #     d.enqueue_right('fee')
-    #     self.assertFalse(d.is_empty())
+    def test_not_empty_right(self):
+        """
+        Test 26: A deque with one right-enqueued value is not empty.
+        """
+        d = Deque()
+        d.enqueue_right('fee')
+        self.assertFalse(d.is_empty())
 
-    # def test_empty_after_dequeue_left(self):
+    def test_empty_after_dequeue_left(self):
     #     """
     #     Test 27: A deque with one enqueued value is empty after left-dequeuing.
     #     """
